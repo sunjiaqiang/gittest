@@ -10,3 +10,4 @@ $app = new Yaf_Application(APP_PATH."/conf/application.ini");
 //echo '</pre>';
 $app->bootstrap();
 $app->run();
+echo 'test';
