@@ -52,7 +52,7 @@ class Test2 extends News2 implements meth{
     public function __sleep()
     {
         // TODO: Implement __sleep() method.
-        return'自动被调用';
+        return'自动被调用dsdse33344';
     }
 
     public function __set($name, $value)
