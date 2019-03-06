@@ -47,11 +47,11 @@ class Test2 extends News2 implements meth{
             '2'
         ];
         $arr = serialize($arr);
+        $arr = serialize($arr);
         echo $arr;
     }
     public function __sleep()
     {
-        // TODO: Implement __sleep() method.
         return'自动被调用dsdse33344';
     }
 
@@ -74,6 +74,15 @@ class Test2 extends News2 implements meth{
     }
     private function mypri(){
         echo '我是private方法';
+    }
+    public function __call($name, $arguments)
+    {
+        // TODO: Implement __call() method.
+        if (method_exists($this, $name)){
+            $this->$name();
+        }else{
+            echo "你调用的".$name."方法不存在";
+        }
     }
     public function __call($name, $arguments)
     {
