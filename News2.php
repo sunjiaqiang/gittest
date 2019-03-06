@@ -94,9 +94,9 @@ class Test2 extends News2 implements meth{
         }
     }
 }
-$test = new Test2();
-$test->test('iii');
-$test->index();
+$dtest = new Test2();
+$teest->test('iii');
+$tewst->index();
 echo $test->get_list(),'<br>';
 $test->b = '22';
 echo $test->b,'<br>';
