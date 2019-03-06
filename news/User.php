@@ -14,7 +14,7 @@ class Admin_User_module extends CI_Module
         parent::__construct();
         $this->load->model('admin.Adminuser_model');
         $this->load->model('admin.Adminrole_model');
-        //检测是否已登录
+        //检测是否已登录,等状态
         $this->Adminuser_model->is_login();
     }
 
@@ -130,7 +130,7 @@ class Admin_User_module extends CI_Module
     }
 
     /**
-     * 异步验证用户名是否存在
+     * 异步验证用户名是否存在,方法
      */
     public function ajax_check_name()
     {
