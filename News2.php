@@ -6,7 +6,7 @@
  * Time: 11:05
  */
 abstract class News2{
-    const name = "测试";
+    const name = "测试02222";
     public function index(){
         echo 'index';
     }
@@ -20,7 +20,7 @@ interface meth{
 
 trait _news{
     public function get_list(){
-        return "list666";
+        return "list";
     }
     public static function _update(){
         echo "trait _news update";
