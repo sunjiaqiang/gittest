@@ -64,7 +64,9 @@ class Test2 extends News2 implements meth{
 
     public function __get($name)
     {
-        // TODO: Implement __get() method.
+       
+	   
+	   
         echo 'get '.$name,'<br>';
         if (isset($this->$name)){
             echo $this->$name,'<br>';
@@ -104,7 +106,3 @@ Test2::_update();
 $test->name2;
 $test->mypri2();
 $test->remove_row();
-//$news2 = new News2();
-//$class = 'News2';
-//echo $class::name;
-//$news2->index();
