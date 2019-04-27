@@ -24,6 +24,8 @@ trait _news{
     }
     public static function _update(){
         echo "trait _news update";
+		echo "trait _news update";
+		echo "trait _news update";
     }
 }
 
@@ -43,6 +45,14 @@ class Test2 extends News2 implements meth{
     {
         // TODO: Implement remove_row() method.
         $arr = [
+            '1',
+            '2'
+        ];
+		$arr = [
+            '1',
+            '2'
+        ];
+		$arr = [
             '1',
             '2'
         ];
