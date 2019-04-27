@@ -48,14 +48,7 @@ class Test2 extends News2 implements meth{
             '1',
             '2'
         ];
-		$arr = [
-            '1',
-            '2'
-        ];
-		$arr = [
-            '1',
-            '2'
-        ];
+	
         $arr = serialize($arr);
         $arr = serialize($arr);
         echo $arr;
@@ -85,6 +78,12 @@ class Test2 extends News2 implements meth{
         }
     }
     private function mypri(){
+        echo '我是private方法';
+    }
+	private function mypri(){
+        echo '我是private方法';
+    }
+	private function mypri(){
         echo '我是private方法';
     }
     public function __call($name, $arguments)
