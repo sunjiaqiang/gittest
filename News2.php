@@ -83,7 +83,7 @@ class Test2 extends News2 implements meth{
         if (method_exists($this, $name)){
             $this->$name();
         }else{
-            echo "你调用的".$name."方法不存在";
+            echo "你调用的".$name."方法不存在454545";
         }
     }
     public function __call($name, $arguments)
@@ -92,12 +92,12 @@ class Test2 extends News2 implements meth{
         if (method_exists($this, $name)){
             $this->$name();
         }else{
-            echo "你调用的".$name."方法不存在";
+            echo "你调用的".$name."方法不存在fdgd";
         }
     }
 }
 $dtest = new Test2();
-$teest->test('iii');
+$teest->test('diii');
 $tewst->index();
 echo $test->get_list(),'<br>';
 $test->b = '22';
